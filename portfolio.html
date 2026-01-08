@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Sharma | Portfolio</title>
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- INTERNAL CSS -->
+  <style>
+    :root {
+      --primary: #0A2540;
+      --secondary: #1E3A8A;
+      --accent: #C9A24D;
+      --bg: #F8FAFC;
+      --text: #1F2933;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ================= HEADER ================= */
+    header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: var(--white);
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* ================= HERO ================= */
+    .hero {
+      padding: 90px 10%;
+      background: linear-gradient(to right, #0A2540, #1E3A8A);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 26px;
+      margin-right: 15px;
+      background: var(--accent);
+      color: var(--primary);
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--secondary);
+      color: var(--white);
+    }
+
+    /* ================= SECTIONS ================= */
+    section {
+      padding: 70px 10%;
+    }
+
+    section h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: var(--primary);
+    }
+
+    /* ================= SKILLS ================= */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card.highlight {
+      border-left: 6px solid var(--accent);
+    }
+
+    .card h4 {
+      color: var(--secondary);
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    /* ================= PROJECTS ================= */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: var(--white);
+      padding: 22px;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .project-card h4 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .project-card p {
+      font-size: 14px;
+    }
+
+    /* ================= CONTACT ================= */
+    #contact p {
+      margin-bottom: 10px;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .hero h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <h1>Krishna Sharma</h1>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="file:///C:/Users/krishna%20sharma/OneDrive/Desktop/krishna%20sharma/resume.pdf" target="_blank">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <div class="hero">
+    <h2>Frontend Developer & Business Operations Professional</h2>
+    <p>
+      I design modern, responsive websites and manage business data using
+      Excel, Tally, and analytics tools. Actively seeking internship or
+      entry-level opportunities.
+    </p>
+
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="C:/Users/krishna%20sharma/OneDrive/Desktop/krishna%20sharma/resume.pdf" class="btn" download>Download Resume</a>
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills">
+    <h3>Core Skills</h3>
+    <div class="skills">
+
+      <div class="card highlight">
+        <h4>Business, Analytics & Office Skills</h4>
+        <ul>
+          <li>Microsoft Excel (Intermediate)</li>
+          <li>Data Entry & Data Cleaning</li>
+          <li>MIS & Monthly Reports</li>
+          <li>Formulas: SUM, IF, VLOOKUP</li>
+          <li>Tally (Basics – Ledger, Voucher, GST)</li>
+          <li>Google Analytics (GA4 Basics)</li>
+          <li>Google Search Console</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Web Development Skills</h4>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (Basic)</li>
+          <li>Responsive Design</li>
+          <li>UI/UX Basics</li>
+          <li>SEO Fundamentals</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Tools & Platforms</h4>
+        <ul>
+          <li>VS Code</li>
+          <li>Git & GitHub</li>
+          <li>Chrome DevTools</li>
+          <li>Netlify / GitHub Pages</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="projects">
+
+      <div class="project-card">
+        <h4>Real Estate Website</h4>
+        <p>Lead-focused responsive real estate website.</p>
+      </div>
+
+      <div class="project-card">
+        <h4>E-Commerce Website</h4>
+        <p>Modern product listing and cart UI.</p>
+      </div>
+
+      <div class="project-card">
+        <h4>Education / Course Website</h4>
+        <p>Professional education platform UI.</p>
+      </div>
+
+      <div class="project-card">
+        <h4>Netflix UI Clone</h4>
+        <p>Frontend clone focusing on layout and responsiveness.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I am a detail-oriented professional with strong interest in web
+      development, data handling, and business operations. I enjoy learning
+      new technologies and applying them to real-world projects.
+    </p>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <h3>Contact</h3>
+    <p><strong>Email:</strong> ks4401577@gmail.com</p>
+    <p><strong>Phone:</strong> +91-9588197741</p>
+
+    <a href="file:///C:/Users/krishna%20sharma/OneDrive/Desktop/krishna%20sharma/resume.pdf" download class="btn">
+      Download Resume
+    </a>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 Krishna Sharma | Portfolio</p>
+  </footer>
+
+</body>
+</html>
